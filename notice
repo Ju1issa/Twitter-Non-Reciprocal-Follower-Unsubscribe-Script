@@ -1,0 +1,11 @@
+Make sure to replace the placeholders 'YOUR_CONSUMER_KEY', 'YOUR_CONSUMER_SECRET', 'YOUR_ACCESS_TOKEN', and 'YOUR_ACCESS_TOKEN_SECRET' with your actual Twitter API credentials.
+
+The script uses the Tweepy library to interact with the Twitter API. It authenticates using the provided API credentials and retrieves the list of followers (followers) and friends (friends), which are the users you are following.
+
+It then identifies the non-reciprocal followers by taking the difference between the followers and friends sets. These are the users who follow you but whom you are not following back.
+
+The script then proceeds to unfollow each non-reciprocal follower using the destroy_friendship method provided by the Tweepy library. The user IDs of the unfollowed users are printed to the console.
+
+Please note that the script requires the Tweepy library to be installed. You can install it by running pip install tweepy in your command line.
+
+Please exercise caution when using this script, as unfollowing users without valid reasons may violate Twitter's terms of service. Make sure to review and comply with Twitter's guidelines and policies.
