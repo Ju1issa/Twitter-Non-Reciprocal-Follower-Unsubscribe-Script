@@ -21,7 +21,7 @@ friends = set(api.friends_ids())
 # Find non-reciprocal followers
 non_reciprocal = followers - friends
 
-# Unfollow non-reciprocal followers
+# Unfollow non-reciprocal followers:
 for user_id in non_reciprocal:
     try:
         api.destroy_friendship(user_id)
